@@ -1,0 +1,27 @@
+.main-css {
+  width: 532px;
+  height: 1340.63px;
+  border: 1px solid black;
+  margin-top: 31px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Barlow";
+}
+.main-baslik {
+  font-size: 22px;
+  font-family: "Barlow", sans-serif;
+  font-weight: normal;
+}
+.fiyat-yorum {
+  display: flex;
+  justify-content: space-between;
+}
+.yorum {
+  display: flex;
+  gap: 70px;
+}
+.selectors {
+  display: flex;
+  justify-content: space-between;
+  width: 427px;
+}
