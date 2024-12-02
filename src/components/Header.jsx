@@ -5,7 +5,7 @@ import "./header.css";
 export default function Header() {
   return (
     <header className="header-css">
-      <h1 style={{ fontFamily: "Roboto Condensed" }}>Teknolojik Yemekler</h1>
+      <img src="Assets/Iteration-1-assets/logo.svg" alt="foto" />
       <nav className="nav-css">
         <div>
           <NavLink
@@ -19,7 +19,7 @@ export default function Header() {
         </div>
         <div>
           <NavLink
-            to="/order"
+            to="/form"
             exact
             activeClassName="active-link"
             className="navLink-css"
@@ -27,6 +27,7 @@ export default function Header() {
             Sipariş Oluştur
           </NavLink>
         </div>
+        <div className="checkbox"></div>
       </nav>
     </header>
   );

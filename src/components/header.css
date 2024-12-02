@@ -3,12 +3,12 @@
   align-items: center;
   height: 207px;
   background-color: #ce2829;
-  width: 100%;
   flex-direction: column;
   justify-content: center;
   color: white;
   text-decoration: none;
   font-family: "Barlow", sans-serif;
+  width: 100%;
 }
 .active-link {
   font-weight: bold;

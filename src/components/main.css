@@ -1,11 +1,12 @@
 .main-css {
   width: 532px;
   height: 1340.63px;
-  border: 1px solid black;
   margin-top: 31px;
   display: flex;
   flex-direction: column;
   font-family: "Barlow";
+  font-size: 16px;
+  gap: 2rem;
 }
 .main-baslik {
   font-size: 22px;
@@ -19,9 +20,19 @@
 .yorum {
   display: flex;
   gap: 70px;
+  align-items: center;
 }
 .selectors {
   display: flex;
   justify-content: space-between;
   width: 427px;
+}
+.checkbox {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.siparisNotu {
+  margin-top: 2rem;
 }
