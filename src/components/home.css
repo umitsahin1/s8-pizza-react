@@ -27,3 +27,23 @@
   border: none;
   color: #292929;
 }
+
+@media (max-width: 540px) {
+  .home-paragraf {
+    width: 398px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-size: auto;
+  }
+  .home-css {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-position: center center;
+  }
+  .home-css img {
+    margin-top: 120px;
+  }
+}

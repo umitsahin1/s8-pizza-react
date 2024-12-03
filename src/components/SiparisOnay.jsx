@@ -17,4 +17,4 @@ const SiparisOnay = () => {
   );
 };
 
-export default SiparisOnay;
+export default SiparisOnay;  

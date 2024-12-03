@@ -1,1 +1,8 @@
-
+@media (max-width: 540px) {
+  .app-css {
+    width: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -12,6 +12,8 @@
   font-size: 22px;
   font-family: "Barlow", sans-serif;
   font-weight: normal;
+  color: #292929;
+  font-weight: 600px;
 }
 .fiyat-yorum {
   display: flex;
@@ -35,4 +37,11 @@
 }
 .siparisNotu {
   margin-top: 2rem;
+}
+@media (max-width: 540px) {
+  .main-css {
+    width: 420px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }

@@ -24,7 +24,7 @@ export default function Header() {
             activeClassName="active-link"
             className="navLink-css"
           >
-            Sipariş Oluştur
+            Sipariş Oluştur  
           </NavLink>
         </div>
         <div className="checkbox"></div>
