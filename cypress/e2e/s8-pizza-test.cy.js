@@ -39,4 +39,23 @@ describe("Pizza-React-Test", () => {
 
     cy.url().should("include", "/siparis");
   });
+
+  it("Girilen isim 3 harften küçükse hata mesajı gösterilir", () => {
+    cy.visit("http://localhost:5174/form");
+
+    cy.get('[data-cy="isim-input"]').type("Ah");
+    cy.contains("İsim en az 3 karakter olmalı").should("be.visible");
+  });
+
+  it("Girilen isim 3 harften küçükse hata mesajı gösterilir", () => {
+    cy.visit("http://localhost:5174/form");
+
+    cy.contains("Pepperoni").prev().check(); // "Pepperoni" malzemesini seç
+    cy.contains("Sosis").prev().check(); // "Sosis" malzemesini seç
+    cy.contains("Kanada Jambonu").prev().check(); // "Kanada Jambonu" malzemesini seç
+
+    cy.contains("En az 4, en fazla 10 malzeme seçmelisiniz").should(
+      "be.visible"
+    );
+  });
 });
