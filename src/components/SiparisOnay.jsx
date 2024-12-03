@@ -1,16 +1,19 @@
 import React from "react";
+import "./siparisOnay.css";
 
 const SiparisOnay = () => {
   return (
-    <div
-      className="siparis-onay"
-      style={{
-        backgroundImage: "url(../../Interfaces/Iteration-1/Success.png",
-        backgroundSize: "cover",
-        width: "100%",
-        height: "100vh",
-      }}
-    ></div>
+    <div className="siparisOnay">
+      <img
+        className="onay-css"
+        src="Assets/Iteration-1-assets/logo.svg"
+        alt="logo"
+      />
+      <div className="paragraf">
+        <h1> TEBRİKLER! </h1>
+        <h1>SİPARİŞİNİZ ALINDI!</h1>
+      </div>
+    </div>
   );
 };
 

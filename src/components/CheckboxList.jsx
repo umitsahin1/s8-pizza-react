@@ -40,6 +40,7 @@ const CheckboxList = ({ onaylanmisMalzemeler, onMalzemeChange }) => {
             value={labelText}
             onChange={handleCheckBoxChange}
             checked={onaylanmisMalzemeler.includes(labelText)}
+            data-cy={`checkbox-${labelText}`}
           />
           <Label style={{ width: "122px" }} check>
             {labelText}

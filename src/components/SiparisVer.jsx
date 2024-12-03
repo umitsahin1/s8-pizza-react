@@ -1,9 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
-import { toast } from "react-toastify";
 import axios from "axios";
 
-const SiparisVer = ({ isValid, formData }) => {
+const SiparisVer = ({ isValid, formData, quantity }) => {
   const history = useHistory();
 
   const handleSiparisOnay = (event) => {
@@ -64,8 +63,10 @@ const SiparisVer = ({ isValid, formData }) => {
               textAlign: "right",
             }}
           >
-            <p>25.00₺</p>
-            <p style={{ color: "#CE2829" }}>110.50₺</p>
+            <p>{formData.onaylanmisMalzemeler.length * 5}₺</p>
+            <p style={{ color: "#CE2829" }}>
+              {85.5 * quantity + formData.onaylanmisMalzemeler.length * 5}₺
+            </p>
           </div>
         </div>
       </div>
@@ -75,6 +76,7 @@ const SiparisVer = ({ isValid, formData }) => {
           disabled={!isValid}
           onClick={handleSiparisOnay}
           type="button"
+          data-cy="submit-button"
           style={{
             padding: "5px 10px",
             fontSize: "16px",

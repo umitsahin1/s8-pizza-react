@@ -9,9 +9,13 @@ const Home = () => {
       <p className="home-paragraf" style={{ marginTop: "40px" }}>
         KOD ACIKTIRIR
       </p>
-      <p className="home-paragraf" style={{ marginBottom: "40px" }}>PİZZA, DOYURUR</p>
+      <p className="home-paragraf" style={{ marginBottom: "40px" }}>
+        PİZZA, DOYURUR
+      </p>
       <Link to="/form">
-        <button className="home-button">ACIKTIM</button>
+        <button data-cy="home-button" className="home-button">
+          ACIKTIM
+        </button>
       </Link>
     </div>
   );

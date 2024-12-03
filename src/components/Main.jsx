@@ -28,6 +28,8 @@ export default function Main() {
     boyut: false,
   });
 
+  const [quantity, setQuantity] = useState(1);
+
   const handleChange = (event) => {
     const { name, value, type, checked } = event.target;
 
@@ -78,7 +80,9 @@ export default function Main() {
       formData.onaylanmisMalzemeler.length <= 10 &&
       formData.boyut !== "";
     setIsValid(isFormValid);
+  }, [formData]);
 
+  useEffect(() => {
     if (errors.isim) {
       toast.error(errorMessages.isim);
     } else if (errors.onaylanmisMalzemeler) {
@@ -86,7 +90,7 @@ export default function Main() {
     } else if (errors.boyut) {
       console.log(errorMessages.boyut);
     }
-  }, [formData]);
+  }, [JSON.stringify(errors)]);
 
   return (
     <div className="main-css">
@@ -121,6 +125,7 @@ export default function Main() {
                 checked={formData.boyut === "Küçük"}
                 onChange={handleChange}
                 invalid={errors.boyut}
+                data-cy="boyut-select"
               />{" "}
               <Label check>Küçük</Label>
             </FormGroup>
@@ -132,6 +137,7 @@ export default function Main() {
                 checked={formData.boyut === "Orta"}
                 onChange={handleChange}
                 invalid={errors.boyut}
+                data-cy="boyut-select"
               />{" "}
               <Label check>Orta</Label>
             </FormGroup>
@@ -143,6 +149,7 @@ export default function Main() {
                 checked={formData.boyut === "Büyük"}
                 onChange={handleChange}
                 invalid={errors.boyut}
+                data-cy="boyut-select"
               />{" "}
               <Label check>Büyük</Label>
             </FormGroup>
@@ -188,6 +195,7 @@ export default function Main() {
               onChange={handleChange}
               invalid={errors.isim}
               style={{ marginBottom: "50px", fontSize: "14px" }}
+              data-cy="isim-input"
             />
           </FormGroup>
         </div>
@@ -215,8 +223,8 @@ export default function Main() {
       </div>
       <hr />
       <div style={{ display: "flex", gap: "10px " }}>
-        <SiparisAdet />
-        <SiparisVer isValid={isValid} formData={formData} />
+        <SiparisAdet quantity={quantity} setQuantity={setQuantity} />
+        <SiparisVer isValid={isValid} formData={formData} quantity={quantity} />
       </div>
     </div>
   );
