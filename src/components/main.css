@@ -161,7 +161,8 @@ a.active-link {
 }
 
 input[type="radio"] {
-  display: none;
+  position: absolute;
+  opacity: 0; /* input öğesini tamamen görünmez yap */
 }
 
 input[type="radio"]:checked + label.custom-radio {

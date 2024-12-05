@@ -40,6 +40,7 @@ const CheckboxList = ({ onaylanmisMalzemeler, onMalzemeChange }) => {
           key={index}
           className="checkbox-label"
           style={{ width: "190px" }}
+          data-cy={`label-${labelText}`}
         >
           {labelText}
           <Input
