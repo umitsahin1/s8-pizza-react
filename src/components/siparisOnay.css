@@ -4,8 +4,10 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 218.21px;
+  height: 1641px;
+  color: white;
 }
+
 h1 {
   color: #ffffff;
   font-family: "Roboto Condensed";
@@ -13,12 +15,36 @@ h1 {
   letter-spacing: 1.5px;
 }
 .onay-css {
-  margin-top: 149px;
+  margin-top: 56px;
 }
 .paragraf {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.siparis-detay {
+  width: 202px;
+  height: 153px;
+}
+.siparis-detay p span {
+  font-weight: 700;
+}
+.siparis-tutar {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 197px;
+  border: 1px solid #faf7f2;
+  border-radius: 6px;
+  margin-top: 50px;
+  padding: 42px 49px;
+}
+.siparis-fiyat {
+  display: flex;
+  flex-direction: column;
+}
+.siparisOnay-footer {
+  margin-top: 251px;
 }
 
 @media (max-width: 540px) {

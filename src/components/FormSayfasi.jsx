@@ -1,7 +1,12 @@
 import React from "react";
 import Main from "./main";
 import Header from "./header";
-function FormSayfasi() {
+function FormSayfasi({
+  quantity = { quantity },
+  setQuantity = { setQuantity },
+  formData = { formData },
+  setFormData = { setFormData },
+}) {
   return (
     <div
       className="formsayfasi-css"
@@ -12,7 +17,12 @@ function FormSayfasi() {
       }}
     >
       <Header />
-      <Main />
+      <Main
+        quantity={quantity}
+        setQuantity={setQuantity}
+        formData={formData}
+        setFormData={setFormData}
+      />
     </div>
   );
 }

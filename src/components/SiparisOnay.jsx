@@ -1,7 +1,8 @@
 import React from "react";
 import "./siparisOnay.css";
+import { FaTwitter } from "react-icons/fa";
 
-const SiparisOnay = () => {
+const SiparisOnay = ({ quantity, formData }) => {
   return (
     <div className="siparisOnay">
       <img
@@ -10,11 +11,187 @@ const SiparisOnay = () => {
         alt="logo"
       />
       <div className="paragraf">
-        <h1> TEBRİKLER! </h1>
-        <h1>SİPARİŞİNİZ ALINDI!</h1>
+        <p
+          style={{
+            fontFamily: "Satisfy",
+            fontSize: "32px",
+            marginTop: "60.46px",
+            color: "#FDC913",
+            marginBottom: "0",
+          }}
+        >
+          lezzetin yolda
+        </p>
+        <h1>SİPARİŞ ALINDI!</h1>
+        <div
+          style={{
+            width: "100%",
+            border: "0.5px solid #FAF7F2",
+            margin: "30px 0",
+          }}
+        ></div>
+        <p
+          style={{
+            fontFamily: "Barlow",
+            fontSize: "22px",
+            marginBottom: "40px",
+            fontWeight: "600",
+          }}
+        >
+          Position Absolute Acı Pizza
+        </p>
+        <div className="siparis-detay">
+          <p style={{ fontWeight: "400", fontSize: "16px" }}>
+            Boyut: <span>{formData.boyut}</span>
+          </p>
+          <p style={{ fontWeight: "400" }}>
+            Hamur: <span>{formData.hamur}</span>
+          </p>
+          <p style={{ fontWeight: "400" }}>
+            Ek Malzemeler:
+            <span>{formData.onaylanmisMalzemeler.join(",")}</span>
+          </p>
+        </div>
+        <div className="siparis-tutar">
+          <p>Sipariş Toplamı</p>
+          <div className="siparis-fiyat">
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <p>Seçimler</p>
+              <p>{formData.onaylanmisMalzemeler.length * 5}₺</p>
+            </div>
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <p>Toplam</p>
+              <p>
+                {85.5 * quantity + formData.onaylanmisMalzemeler.length * 5}₺
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <footer className="siparisOnay-footer">
+          <div className="footer-information">
+            <div>
+              <img
+                src="Assets/Iteration-2-aseets/footer/logo-footer.svg"
+                style={{ marginBottom: "50px" }}
+              />
+              <p style={{ marginBottom: "20px" }}>
+                <img
+                  src="Assets/Iteration-2-aseets/footer/icons/icon-1.png"
+                  style={{ marginRight: "10px" }}
+                />
+                341 Londonderry Road, Istanbul Türkiye
+              </p>
+              <p style={{ marginBottom: "20px" }}>
+                <img
+                  src="Assets/Iteration-2-aseets/footer/icons/icon-2.png"
+                  style={{ marginRight: "10px" }}
+                />
+                aciktim@teknolojikyemekler.com
+              </p>
+              <p>
+                <img
+                  src="Assets/Iteration-2-aseets/footer/icons/icon-3.png"
+                  style={{ marginRight: "10px" }}
+                />
+                +90 216 123 45 67
+              </p>
+            </div>
+            <div style={{ marginTop: "68.91px" }}>
+              <p style={{ marginBottom: "30px", fontSize: "24px" }}>Hot Menu</p>
+              <p>Terminal Pizza</p>
+              <p>5 Kişilik Hackathlon Pizza</p>
+              <p>useEffect Tavuklu Pizza</p>
+              <p>Beyaz Console Frosty</p>
+              <p>Testler Geçti Mutlu Burger</p>
+              <p>Position Absolute Acı Burger</p>
+            </div>
+            <div>
+              <p style={{ fontSize: "24px", margin: "68.91px 0 40px 0" }}>
+                Instagram
+              </p>
+              <div>
+                <img
+                  src="Assets/Iteration-2-aseets/footer/insta/li-0.png"
+                  style={{
+                    width: "105px",
+                    height: "94.5px",
+                    marginRight: "16.75px",
+                    marginBottom: "33px",
+                  }}
+                />
+                <img
+                  src="Assets/Iteration-2-aseets/footer/insta/li-1.png"
+                  style={{
+                    width: "105px",
+                    height: "94.5px",
+                    marginRight: "16.75px",
+                    marginBottom: "33px",
+                  }}
+                />
+                <img
+                  src="Assets/Iteration-2-aseets/footer/insta/li-2.png"
+                  style={{
+                    width: "105px",
+                    height: "94.5px",
+                    marginBottom: "33px",
+                  }}
+                />
+              </div>
+              <div>
+                <img
+                  src="Assets/Iteration-2-aseets/footer/insta/li-3.png"
+                  style={{
+                    width: "105px",
+                    height: "94.5px",
+                    marginRight: "16.75px",
+                  }}
+                />
+                <img
+                  src="Assets/Iteration-2-aseets/footer/insta/li-4.png"
+                  style={{
+                    width: "105px",
+                    height: "94.5px",
+                    marginRight: "16.75px",
+                  }}
+                />
+                <img
+                  src="Assets/Iteration-2-aseets/footer/insta/li-5.png"
+                  style={{ width: "105px", height: "94.5px" }}
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              position: "relative",
+              bottom: "-41px",
+              border: "1px solid #FFFFFF26",
+              width: "1680px",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                width: "1066px",
+                height: "89.8px",
+                alignItems: "center",
+              }}
+            >
+              <p>© 2023 Teknolojik Yemekler. </p>
+              <FaTwitter
+                style={{ borderTopColor: "black", color: "white" }}
+              />{" "}
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );
 };
 
-export default SiparisOnay;  
+export default SiparisOnay;

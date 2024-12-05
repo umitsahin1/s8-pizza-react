@@ -1,43 +1,30 @@
 .header-css {
   display: flex;
   align-items: center;
-  height: 207px;
-  background-color: #ce2829;
-  flex-direction: column;
   justify-content: center;
+  height: 138px;
+  background-color: #ce2829;
   color: white;
-  text-decoration: none;
   font-family: "Barlow", sans-serif;
   width: 100%;
-}
-.active-link {
-  font-weight: bold;
-  color: white;
-}
-.nav-css {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 4px;
-  font-size: 16px;
-  position: absolute;
-  top: 171.5px;
-  left: 575px;
-  gap: 4px;
-}
-.navLink-css {
-  color: white;
+  position: relative;
   text-decoration: none;
-  font-size: 16px;
+  flex-direction: column;
 }
+
 @media (max-width: 540px) {
   .header-css {
-    margin: 0;
+    width: 100%;
     padding: 0;
-    width: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    flex-direction: column;
     text-align: center;
+    justify-content: flex-start;
+  }
+
+  .pizza {
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

@@ -30,6 +30,7 @@ const SiparisVer = ({ isValid, formData, quantity }) => {
         width: "350px",
         margin: "0",
         paddingTop: "42px",
+        backgroundColor: "#FAF7F2",
       }}
     >
       <div

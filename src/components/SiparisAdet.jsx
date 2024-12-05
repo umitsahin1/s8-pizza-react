@@ -17,7 +17,7 @@ export default function QuantitySelector({ quantity, setQuantity }) {
         alignItems: "center",
         width: "170px",
         height: "57px",
-      }}
+      }}  
     >
       <button
         onClick={decrease}

@@ -6,29 +6,26 @@ import SiparisAdet from "./SiparisAdet";
 import SiparisVer from "./SiparisVer.jsx";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
-const initialForm = {
-  isim: "",
-  boyut: "",
-  onaylanmisMalzemeler: [],
-  siparisNotu: "",
-};
 const errorMessages = {
   isim: "İsim en az 3 karakter olmalı",
   boyut: "Boyut seçmelisiniz",
   onaylanmisMalzemeler: "En az 4, en fazla 10 malzeme seçmelisiniz",
 };
 
-export default function Main() {
-  const [formData, setFormData] = useState(initialForm);
+export default function Main({
+  quantity = { quantity },
+  setQuantity = { setQuantity },
+  formData = { formData },
+  setFormData = { setFormData },
+}) {
   const [isValid, setIsValid] = useState(false);
   const [errors, setErrors] = useState({
     isim: false,
     onaylanmisMalzemeler: false,
     boyut: false,
   });
-
-  const [quantity, setQuantity] = useState(1);
 
   const handleChange = (event) => {
     const { name, value, type, checked } = event.target;
@@ -94,6 +91,33 @@ export default function Main() {
 
   return (
     <div className="main-css">
+      <img
+        src="Assets/Iteration-2-aseets/pictures/food-2.png"
+        className="pizza-image"
+        style={{ marginTop: "-350px" }}
+      />
+      <nav className="nav-css">
+        <div>
+          <NavLink
+            to="/"
+            exact
+            activeClassName="active-link"
+            className="navLink-css"
+          >
+            Anasayfa-
+          </NavLink>
+        </div>
+        <div>
+          <NavLink
+            to="/form"
+            exact
+            activeClassName="active-link"
+            className="navLink-css"
+          >
+            Sipariş Oluştur
+          </NavLink>
+        </div>
+      </nav>
       <h1 className="main-baslik">Position Absolute Acı Pizza</h1>
       <div className="fiyat-yorum">
         <p style={{ fontWeight: "bold", fontSize: "28px" }}>85.50</p>
@@ -109,11 +133,13 @@ export default function Main() {
         fırında yüksek sıcaklıkta pişirilen, genellikle yuvarlak, düzleştirilmiş
         mayalı buğday bazlı hamurdan oluşan İtalyan kökenli lezzetli bir
         yemektir. . Küçük bir pizzaya bazen pizzetta denir.
-      </p>
-
+      </p>{" "}
       <div className="selectors">
         <div className="boyut">
-          <FormGroup tag="fieldset">
+          <FormGroup
+            tag="fieldset"
+            style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}
+          >
             <legend style={{ fontSize: "20px" }}>
               Boyut Seç <span style={{ color: "red" }}>*</span>
             </legend>
@@ -121,49 +147,55 @@ export default function Main() {
               <Input
                 name="boyut"
                 type="radio"
-                value="Küçük"
-                checked={formData.boyut === "Küçük"}
+                value="S"
+                checked={formData.boyut === "S"}
                 onChange={handleChange}
                 invalid={errors.boyut}
                 data-cy="boyut-select"
               />{" "}
-              <Label check>Küçük</Label>
+              <Label check>S</Label>
             </FormGroup>
             <FormGroup check>
               <Input
                 name="boyut"
                 type="radio"
-                value="Orta"
-                checked={formData.boyut === "Orta"}
+                value="M"
+                checked={formData.boyut === "M"}
                 onChange={handleChange}
                 invalid={errors.boyut}
                 data-cy="boyut-select"
               />{" "}
-              <Label check>Orta</Label>
+              <Label check>M</Label>
             </FormGroup>
             <FormGroup check>
               <Input
                 name="boyut"
                 type="radio"
-                value="Büyük"
-                checked={formData.boyut === "Büyük"}
+                value="L"
+                checked={formData.boyut === "L"}
                 onChange={handleChange}
                 invalid={errors.boyut}
                 data-cy="boyut-select"
               />{" "}
-              <Label check>Büyük</Label>
+              <Label check>L</Label>
             </FormGroup>
           </FormGroup>
         </div>
         <div className="hamur">
           <FormGroup>
-            <Label for="exampleSelect" style={{ fontSize: "20px" }}>
+            <Label for="hamur" style={{ fontSize: "20px" }}>
               Hamur Seç <span style={{ color: "red" }}>*</span>
             </Label>
-            <Input id="exampleSelect" name="select" type="select">
-              <option>İnce Hamur</option>
+            <Input
+              id="hamur"
+              name="hamur"
+              type="select"
+              style={{ backgroundColor: "#FAF7F2" }}
+              onChange={handleChange}
+            >
+              <option>Süpper İnce</option>
               <option>Normal Hamur</option>
-              <option>Kalın Hamur</option>
+              <option>Kapkalın Hamur</option>
             </Input>
           </FormGroup>
         </div>
@@ -194,7 +226,11 @@ export default function Main() {
               value={formData.isim}
               onChange={handleChange}
               invalid={errors.isim}
-              style={{ marginBottom: "50px", fontSize: "14px" }}
+              style={{
+                marginBottom: "50px",
+                fontSize: "14px",
+                backgroundColor: "#FAF7F2",
+              }}
               data-cy="isim-input"
             />
           </FormGroup>
@@ -216,6 +252,7 @@ export default function Main() {
                 paddingTop: "1.5rem",
                 paddingLeft: "1.5rem",
                 fontSize: "14px",
+                backgroundColor: "#FAF7F2",
               }}
             />
           </FormGroup>

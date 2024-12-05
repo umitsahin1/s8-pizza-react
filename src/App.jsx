@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/Home";
@@ -7,7 +7,19 @@ import FormSayfasi from "./components/FormSayfasi";
 import SiparisOnay from "./components/SiparisOnay";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+const initialForm = {
+  isim: "",
+  boyut: "",
+  onaylanmisMalzemeler: [],
+  siparisNotu: "",
+  hamur: "Süper İnce",
+};
+
 function App() {
+  const [quantity, setQuantity] = useState(1);
+  const [formData, setFormData] = useState(initialForm);
+
   return (
     <div className="app-css">
       <Switch>
@@ -15,10 +27,15 @@ function App() {
           <Home />
         </Route>
         <Route path="/form">
-          <FormSayfasi />
+          <FormSayfasi
+            quantity={quantity}
+            setQuantity={setQuantity}
+            formData={formData}
+            setFormData={setFormData}
+          />
         </Route>
         <Route path="/siparis">
-          <SiparisOnay />
+          <SiparisOnay quantity={quantity} formData={formData} />
         </Route>
       </Switch>
       <ToastContainer

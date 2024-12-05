@@ -3,17 +3,18 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  padding-top: 60px;
+  padding-top: 56px;
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 0;
+  gap: 20px;
 }
 .home-paragraf {
   font-size: 86px;
   font-family: "Roboto Condensed";
   color: white;
-  line-height: 1;
+  line-height: 0.6;
   display: inline;
 }
 .home-button {
@@ -26,6 +27,137 @@
   border-radius: 50px;
   border: none;
   color: #292929;
+}
+.fırsat-css {
+  font-size: 32px;
+  font-family: "Satisfy";
+  color: #fdc913;
+  position: relative;
+  top: 20px;
+}
+.menu-css {
+  display: flex;
+  justify-content: space-between;
+  width: 1068px;
+  height: 42px;
+  align-items: center;
+}
+.menu-icons {
+  display: flex;
+  width: max-content;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.mainMenu-css {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 94px;
+  background-color: white;
+}
+.menu-icons p {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Barlow";
+}
+.siparis-Ver {
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+  color: white;
+  font-family: "Barlow";
+  margin-top: 70px;
+  font-size: 32px;
+}
+.siparisVer-1 {
+  background-image: url(../../Assets/Iteration-2-aseets/cta/kart-1.png);
+  background-size: cover;
+  width: 531px;
+  height: 448.75px;
+  border-radius: 12px;
+  padding: 32px;
+}
+.siparisVer-2 {
+  display: flex;
+  gap: 9px;
+  flex-direction: column;
+}
+.siparisVer-2-1 {
+  background-image: url(../../Assets/Iteration-2-aseets/cta/kart-2.png);
+  background-size: cover;
+  width: 530px;
+  height: 220px;
+  border-radius: 12px;
+  padding: 32px;
+}
+.siparisVer-2-2 {
+  background-image: url(../../Assets/Iteration-2-aseets/cta/kart-3.png);
+  background-size: cover;
+  width: 530px;
+  height: 220px;
+  border-radius: 12px;
+  padding: 32px;
+}
+.siparisVer-button {
+  border-radius: 50px;
+  color: #ce2829;
+  font-size: 14px;
+  border: none;
+  width: 138px;
+  height: 48px;
+  font-weight: 500;
+}
+.paragraflar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+.mainMenu-css-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 94px;
+}
+.fotograflı-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 32px;
+  font-family: "Barlow";
+}
+.cards {
+  background-color: white;
+  width: 334.67px;
+  height: 419px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border-radius: 32px;
+}
+.cards div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  background-color: black;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 561.25px;
+  color: white;
+  font-size: 18px;
+}
+.footer-information {
+  display: flex;
+  width: 1066px;
+  height: 390.37px;
+  justify-content: space-between;
 }
 
 @media (max-width: 540px) {
