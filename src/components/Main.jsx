@@ -143,42 +143,53 @@ export default function Main({
             <legend style={{ fontSize: "20px" }}>
               Boyut Seç <span style={{ color: "red" }}>*</span>
             </legend>
-            <FormGroup check>
-              <Input
-                name="boyut"
-                type="radio"
-                value="S"
-                checked={formData.boyut === "S"}
-                onChange={handleChange}
-                invalid={errors.boyut}
-                data-cy="boyut-select"
-              />{" "}
-              <Label check>S</Label>
-            </FormGroup>
-            <FormGroup check>
-              <Input
-                name="boyut"
-                type="radio"
-                value="M"
-                checked={formData.boyut === "M"}
-                onChange={handleChange}
-                invalid={errors.boyut}
-                data-cy="boyut-select"
-              />{" "}
-              <Label check>M</Label>
-            </FormGroup>
-            <FormGroup check>
-              <Input
-                name="boyut"
-                type="radio"
-                value="L"
-                checked={formData.boyut === "L"}
-                onChange={handleChange}
-                invalid={errors.boyut}
-                data-cy="boyut-select"
-              />{" "}
-              <Label check>L</Label>
-            </FormGroup>
+            <div className="radio-container">
+              <FormGroup check>
+                <Input
+                  name="boyut"
+                  type="radio"
+                  value="S"
+                  checked={formData.boyut === "S"}
+                  onChange={handleChange}
+                  invalid={errors.boyut}
+                  data-cy="boyut-select"
+                  id="boyut-s"
+                />
+                <Label for="boyut-s" className="custom-radio">
+                  S
+                </Label>
+              </FormGroup>
+              <FormGroup check>
+                <Input
+                  name="boyut"
+                  type="radio"
+                  value="M"
+                  checked={formData.boyut === "M"}
+                  onChange={handleChange}
+                  invalid={errors.boyut}
+                  data-cy="boyut-select"
+                  id="boyut-m"
+                />
+                <Label for="boyut-m" className="custom-radio">
+                  M
+                </Label>
+              </FormGroup>
+              <FormGroup check>
+                <Input
+                  name="boyut"
+                  type="radio"
+                  value="L"
+                  checked={formData.boyut === "L"}
+                  onChange={handleChange}
+                  invalid={errors.boyut}
+                  data-cy="boyut-select"
+                  id="boyut-l"
+                />
+                <Label for="boyut-l" className="custom-radio">
+                  L
+                </Label>
+              </FormGroup>
+            </div>
           </FormGroup>
         </div>
         <div className="hamur">

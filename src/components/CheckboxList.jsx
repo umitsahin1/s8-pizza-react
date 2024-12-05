@@ -24,6 +24,7 @@ const CheckboxList = ({ onaylanmisMalzemeler, onMalzemeChange }) => {
 
   return (
     <Form
+      className="checkbox-container"
       style={{
         display: "flex",
         gap: "20px",
@@ -33,7 +34,14 @@ const CheckboxList = ({ onaylanmisMalzemeler, onMalzemeChange }) => {
       }}
     >
       {malzemelerLİstesi.map((labelText, index) => (
-        <FormGroup check inline key={index}>
+        <Label
+          check
+          inline
+          key={index}
+          className="checkbox-label"
+          style={{ width: "190px" }}
+        >
+          {labelText}
           <Input
             type="checkbox"
             name="onaylanmisMalzemeler"
@@ -42,10 +50,8 @@ const CheckboxList = ({ onaylanmisMalzemeler, onMalzemeChange }) => {
             checked={onaylanmisMalzemeler.includes(labelText)}
             data-cy={`checkbox-${labelText}`}
           />
-          <Label style={{ width: "122px" }} check>
-            {labelText}
-          </Label>
-        </FormGroup>
+          <span className="checkmark"></span>
+        </Label>
       ))}
     </Form>
   );

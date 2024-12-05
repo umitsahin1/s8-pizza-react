@@ -271,7 +271,7 @@ const Home = () => {
                 src="Assets/Iteration-2-aseets/footer/icons/icon-2.png"
                 style={{ marginRight: "10px" }}
               />
-              aciktim@teknolojikyemekler.com
+              aciktim@teknolojikyemekler.com 
             </p>
             <p>
               <img

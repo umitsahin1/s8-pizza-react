@@ -48,7 +48,7 @@ const SiparisOnay = ({ quantity, formData }) => {
             Hamur: <span>{formData.hamur}</span>
           </p>
           <p style={{ fontWeight: "400" }}>
-            Ek Malzemeler:
+            Ek Malzemeler: <span> </span>
             <span>{formData.onaylanmisMalzemeler.join(",")}</span>
           </p>
         </div>

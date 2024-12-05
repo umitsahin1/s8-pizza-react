@@ -57,6 +57,128 @@ a.active-link {
   font-size: 16px;
   font-weight: 500;
 }
+
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: flex-start;
+  height: 358px;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+}
+
+.checkbox-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 60px;
+  user-select: none;
+  font-weight: bold;
+  padding-top: 10px;
+  width: max-content;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-label .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 45px;
+  width: 45px;
+  background-color: #faf7f2;
+  border-radius: 6px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.checkbox-label:hover .checkmark {
+  background-color: #e0e0e0;
+}
+
+.checkbox-label input:checked ~ .checkmark {
+  background-color: #fdc913;
+}
+
+.checkbox-label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-label .checkmark:after {
+  left: 16px;
+  top: 6px;
+  width: 16px;
+  height: 29px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  font-family: "Barlow";
+  font-weight: 700;
+}
+
+/*/boyut seçimi css/*/
+
+.radio-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -25px;
+}
+
+.custom-radio {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #eee;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-radio:hover {
+  background-color: #faf7f2;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label.custom-radio {
+  background-color: #ffeecc;
+}
+
+input[type="radio"]:not(:checked) + label.custom-radio {
+  background-color: #faf7f2;
+}
+
+.custom-radio-label {
+  display: block;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
 @media (max-width: 540px) {
   .main-css {
     width: 420px;
