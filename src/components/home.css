@@ -28,6 +28,11 @@
   border: none;
   color: #292929;
 }
+.home-button:hover {
+  cursor: pointer;
+  transform: scale(0.97);
+}
+
 .fırsat-css {
   font-size: 32px;
   font-family: "Satisfy";
@@ -107,6 +112,10 @@
   width: 138px;
   height: 48px;
   font-weight: 500;
+}
+.siparisVer-button:hover {
+  cursor: pointer;
+  transform: scale(0.97);
 }
 .paragraflar {
   display: flex;

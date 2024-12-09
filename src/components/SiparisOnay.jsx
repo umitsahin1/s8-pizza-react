@@ -66,7 +66,7 @@ const SiparisOnay = ({ quantity, formData }) => {
               </p>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
       <div>
         <footer className="siparisOnay-footer">

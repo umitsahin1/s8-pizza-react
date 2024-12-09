@@ -101,6 +101,7 @@ a.active-link {
   background-color: #faf7f2;
   border-radius: 6px;
   transition: background-color 0.3s, border-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .checkbox-label:hover .checkmark {
@@ -124,13 +125,14 @@ a.active-link {
 .checkbox-label .checkmark:after {
   left: 16px;
   top: 6px;
-  width: 16px;
+  width: 13px;
   height: 29px;
-  border: solid black;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+  border: solid rgb(78, 75, 75);
+  border-width: 0px 3.5px 3.5px 0;
+  transform: rotate(35deg);
   font-family: "Barlow";
-  font-weight: 700;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 /*/boyut seçimi css/*/
@@ -154,10 +156,12 @@ a.active-link {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
 }
 
 .custom-radio:hover {
   background-color: #faf7f2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölge etkisi */
 }
 
 input[type="radio"] {
