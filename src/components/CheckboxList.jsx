@@ -11,7 +11,7 @@ const malzemelerLİstesi = [
   "Jalepeno",
   "Sarımsak",
   "Biber",
-  "Sucuk",
+  "Pastırma",
   "Ananas",
   "Kabak",
 ];
