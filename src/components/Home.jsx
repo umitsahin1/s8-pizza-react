@@ -12,6 +12,14 @@ import logo8 from "../../Assets/Iteration-2-aseets/icons/6.svg"
 import logo9 from "../../Assets/Iteration-2-aseets/icons/1.svg"
 import logo10 from "../../Assets/Iteration-2-aseets/icons/2.svg"
 import logo11 from "../../Assets/Iteration-2-aseets/icons/3.svg"
+import logo12 from "../../Assets/Iteration-2-aseets/icons/4.svg"
+import logo13 from "../../Assets/Iteration-2-aseets/icons/5.svg"
+import logo14 from "../../Assets/Iteration-2-aseets/icons/6.svg"
+import logo15 from "../../Assets/Iteration-2-aseets/pictures/food-1.png"
+import logo16 from "../../Assets/Iteration-2-aseets/pictures/food-2.png"
+import logo17 from "../../Assets/Iteration-2-aseets/pictures/food-3.png"
+import logo18 from "../../Assets/Iteration-2-aseets/footer/logo-footer.svg"
+
 
 const Home = () => {
   return (
@@ -178,7 +186,7 @@ const Home = () => {
               borderRadius: "50px",
             }}
           >
-            <img src="Assets/Iteration-2-aseets/icons/4.svg" alt="" />
+            <img src={logo12} alt="" />
             <p>French fries</p>
           </div>
           <div
@@ -191,7 +199,7 @@ const Home = () => {
               borderRadius: "50px",
             }}
           >
-            <img src="Assets/Iteration-2-aseets/icons/5.svg" alt="" />
+            <img src={logo13} alt="" />
             <p>Fast Food</p>
           </div>
           <div
@@ -204,14 +212,14 @@ const Home = () => {
               borderRadius: "50px",
             }}
           >
-            <img src="Assets/Iteration-2-aseets/icons/6.svg" alt="" />
+            <img src={logo14} alt="" />
             <p>Soft Drinks</p>
           </div>
         </div>
       </div>
       <div className="fotograflı-menu">
         <div className="cards">
-          <img src="Assets/Iteration-2-aseets/pictures/food-1.png" />
+          <img src={logo15} />
           <p
             style={{
               fontSize: "22px",
@@ -228,7 +236,7 @@ const Home = () => {
           </div>
         </div>
         <div className="cards">
-          <img src="Assets/Iteration-2-aseets/pictures/food-2.png" />
+          <img src={logo16} />
           <p
             style={{
               fontSize: "22px",
@@ -245,7 +253,7 @@ const Home = () => {
           </div>
         </div>
         <div className="cards">
-          <img src="Assets/Iteration-2-aseets/pictures/food-3.png" />
+          <img src={logo17} />
           <p
             style={{
               fontSize: "22px",
@@ -266,7 +274,7 @@ const Home = () => {
         <div className="footer-information">
           <div>
             <img
-              src="Assets/Iteration-2-aseets/footer/logo-footer.svg"
+              src={logo18}
               style={{ marginBottom: "50px" }}
             />
             <p style={{ marginBottom: "20px" }}>
