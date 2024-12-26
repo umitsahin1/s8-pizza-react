@@ -1,16 +1,16 @@
 import React from "react";
 import "./siparisOnay.css";
 import { FaTwitter } from "react-icons/fa";
-import logos1 "../../Assets/Iteration-2-aseets/footer/logo-footer.svg"
-import logos2 "../../Assets/Iteration-2-aseets/footer/icons/icon-1.png"
-import logos3 "../../Assets/Iteration-2-aseets/footer/icons/icon-2.png"
-import logos4 "../../Assets/Iteration-2-aseets/footer/icons/icon-3.png"
-import logos5 "../../Assets/Iteration-2-aseets/footer/insta/li-0.png"
-import logos6 "../../Assets/Iteration-2-aseets/footer/insta/li-1.png"
-import logos7 "../../Assets/Iteration-2-aseets/footer/insta/li-2.png"
-import logos8 "../../Assets/Iteration-2-aseets/footer/insta/li-3.png"
-import logos9 "../../Assets/Iteration-2-aseets/footer/insta/li-4.png"
-import logos10 "../../Assets/Iteration-2-aseets/footer/insta/li-5.png"
+import logos1 from "../../Assets/Iteration-2-aseets/footer/logo-footer.svg"
+import logos2 from "../../Assets/Iteration-2-aseets/footer/icons/icon-1.png"
+import logos3 from "../../Assets/Iteration-2-aseets/footer/icons/icon-2.png"
+import logos4 from "../../Assets/Iteration-2-aseets/footer/icons/icon-3.png"
+import logos5 from "../../Assets/Iteration-2-aseets/footer/insta/li-0.png"
+import logos6 from "../../Assets/Iteration-2-aseets/footer/insta/li-1.png"
+import logos7 from "../../Assets/Iteration-2-aseets/footer/insta/li-2.png"
+import logos8 from "../../Assets/Iteration-2-aseets/footer/insta/li-3.png"
+import logos9 from "../../Assets/Iteration-2-aseets/footer/insta/li-4.png"
+import logos10 from "../../Assets/Iteration-2-aseets/footer/insta/li-5.png"
 
 const SiparisOnay = ({ quantity, formData }) => {
   return (
