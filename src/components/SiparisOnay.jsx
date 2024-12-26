@@ -1,6 +1,7 @@
 import React from "react";
 import "./siparisOnay.css";
 import { FaTwitter } from "react-icons/fa";
+import logosheader from "../../Assets/Iteration-1-assets/logo.svg"
 import logos1 from "../../Assets/Iteration-2-aseets/footer/logo-footer.svg"
 import logos2 from "../../Assets/Iteration-2-aseets/footer/icons/icon-1.png"
 import logos3 from "../../Assets/Iteration-2-aseets/footer/icons/icon-2.png"
@@ -17,7 +18,7 @@ const SiparisOnay = ({ quantity, formData }) => {
     <div className="siparisOnay">
       <img
         className="onay-css"
-        src="Assets/Iteration-1-assets/logo.svg"
+        src={logosheader}
         alt="logo"
       />
       <div className="paragraf">
