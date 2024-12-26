@@ -19,6 +19,12 @@ import logo15 from "../../Assets/Iteration-2-aseets/pictures/food-1.png"
 import logo16 from "../../Assets/Iteration-2-aseets/pictures/food-2.png"
 import logo17 from "../../Assets/Iteration-2-aseets/pictures/food-3.png"
 import logo18 from "../../Assets/Iteration-2-aseets/footer/logo-footer.svg"
+import logo19 from "../../Assets/Iteration-2-aseets/footer/icons/icon-1.png"
+import logo20 from "../../Assets/Iteration-2-aseets/footer/icons/icon-2.png"
+import logo21 from "../../Assets/Iteration-2-aseets/footer/icons/icon-3.png"
+import logo22 from "../../Assets/Iteration-2-aseets/footer/insta/li-0.png"
+import logo23 from "../../Assets/Iteration-2-aseets/footer/logo-footer.svg"
+import logo24 from "../../Assets/Iteration-2-aseets/footer/logo-footer.svg"
 
 
 const Home = () => {
@@ -279,21 +285,21 @@ const Home = () => {
             />
             <p style={{ marginBottom: "20px" }}>
               <img
-                src="Assets/Iteration-2-aseets/footer/icons/icon-1.png"
+                src={logo19}
                 style={{ marginRight: "10px" }}
               />
               341 Londonderry Road, Istanbul Türkiye
             </p>
             <p style={{ marginBottom: "20px" }}>
               <img
-                src="Assets/Iteration-2-aseets/footer/icons/icon-2.png"
+                src={logo20}
                 style={{ marginRight: "10px" }}
               />
               aciktim@teknolojikyemekler.com 
             </p>
             <p>
               <img
-                src="Assets/Iteration-2-aseets/footer/icons/icon-3.png"
+                src={logo21}
                 style={{ marginRight: "10px" }}
               />
               +90 216 123 45 67
@@ -314,7 +320,7 @@ const Home = () => {
             </p>
             <div>
               <img
-                src="Assets/Iteration-2-aseets/footer/insta/li-0.png"
+                src={logo22}
                 style={{
                   width: "105px",
                   height: "94.5px",
