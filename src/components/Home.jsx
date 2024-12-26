@@ -2,12 +2,39 @@ import React from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import "./home.css";
 import { FaTwitter } from "react-icons/fa";
+import logo from "../../Assets/Iteration-1-assets/logo.svg"
+import logo3 from "../../Assets/Iteration-2-aseets/icons/1.svg"
+import logo4 from "../../Assets/Iteration-2-aseets/icons/2.svg"
+import logo5 from "../../Assets/Iteration-2-aseets/icons/3.svg"
+import logo6 from "../../Assets/Iteration-2-aseets/icons/4.svg"
+import logo7 from "../../Assets/Iteration-2-aseets/icons/5.svg"
+import logo8 from "../../Assets/Iteration-2-aseets/icons/6.svg"
+import logo9 from "../../Assets/Iteration-2-aseets/icons/1.svg"
+import logo10 from "../../Assets/Iteration-2-aseets/icons/2.svg"
+import logo11 from "../../Assets/Iteration-2-aseets/icons/3.svg"
+import logo12 from "../../Assets/Iteration-2-aseets/icons/4.svg"
+import logo13 from "../../Assets/Iteration-2-aseets/icons/5.svg"
+import logo14 from "../../Assets/Iteration-2-aseets/icons/6.svg"
+import logo15 from "../../Assets/Iteration-2-aseets/pictures/food-1.png"
+import logo16 from "../../Assets/Iteration-2-aseets/pictures/food-2.png"
+import logo17 from "../../Assets/Iteration-2-aseets/pictures/food-3.png"
+import logo18 from "../../Assets/Iteration-2-aseets/footer/logo-footer.svg"
+import logo19 from "../../Assets/Iteration-2-aseets/footer/icons/icon-1.png"
+import logo20 from "../../Assets/Iteration-2-aseets/footer/icons/icon-2.png"
+import logo21 from "../../Assets/Iteration-2-aseets/footer/icons/icon-3.png"
+import logo22 from "../../Assets/Iteration-2-aseets/footer/insta/li-0.png"
+import logo23 from "../../Assets/Iteration-2-aseets/footer/insta/li-1.png"
+import logo24 from "../../Assets/Iteration-2-aseets/footer/insta/li-2.png"
+import logo25 from "../../Assets/Iteration-2-aseets/footer/insta/li-3.png"
+import logo26 from "../../Assets/Iteration-2-aseets/footer/insta/li-4.png"
+import logo27 from "../../Assets/Iteration-2-aseets/footer/insta/li-5.png"
+
 
 const Home = () => {
   return (
     <div style={{ backgroundColor: "#faf7f2" }}>
       <header className="home-css">
-        <img src="Assets/Iteration-1-assets/logo.svg" alt="home-png" />
+        <img src={logo} alt="home-png" />
         <p className="fırsat-css">fırsatı kaçırma</p>
         <p className="home-paragraf">KOD ACIKTIRIR</p>
         <p className="home-paragraf">PİZZA, DOYURUR</p>
@@ -20,27 +47,27 @@ const Home = () => {
       <div className="mainMenu-css">
         <div className="menu-css">
           <div className="menu-icons">
-            <img src="Assets/Iteration-2-aseets/icons/1.svg" alt="" />
+            <img src={logo3} alt="" />
             <p>YENİ! Kore</p>
           </div>
           <div className="menu-icons">
-            <img src="Assets/Iteration-2-aseets/icons/2.svg" alt="" />
+            <img src={logo4} alt="" />
             <p>Pizza</p>
           </div>
           <div className="menu-icons">
-            <img src="Assets/Iteration-2-aseets/icons/3.svg" alt="" />
+            <img src={logo5} alt="" />
             <p>Burger</p>
           </div>
           <div className="menu-icons">
-            <img src="Assets/Iteration-2-aseets/icons/4.svg" alt="" />
+            <img src={logo6} alt="" />
             <p>Kızartmalar</p>
           </div>
           <div className="menu-icons">
-            <img src="Assets/Iteration-2-aseets/icons/5.svg" alt="" />
+            <img src={logo7} alt="" />
             <p>Fast Food</p>
           </div>
           <div className="menu-icons">
-            <img src="Assets/Iteration-2-aseets/icons/6.svg" alt="" />
+            <img src={logo8} alt="" />
             <p>Gazlı İçecek</p>
           </div>
         </div>
@@ -129,7 +156,7 @@ const Home = () => {
               borderRadius: "50px",
             }}
           >
-            <img src="Assets/Iteration-2-aseets/icons/1.svg" alt="" />
+            <img src={logo9} alt="" />
             <p>Ramen</p>
           </div>
           <div
@@ -142,7 +169,7 @@ const Home = () => {
               borderRadius: "50px",
             }}
           >
-            <img src="Assets/Iteration-2-aseets/icons/2.svg" alt="" />
+            <img src={logo10} alt="" />
             <p>Pizza</p>
           </div>
           <div
@@ -155,7 +182,7 @@ const Home = () => {
               borderRadius: "50px",
             }}
           >
-            <img src="Assets/Iteration-2-aseets/icons/3.svg" alt="" />
+            <img src={logo11} alt="" />
             <p>Burger</p>
           </div>
           <div
@@ -168,7 +195,7 @@ const Home = () => {
               borderRadius: "50px",
             }}
           >
-            <img src="Assets/Iteration-2-aseets/icons/4.svg" alt="" />
+            <img src={logo12} alt="" />
             <p>French fries</p>
           </div>
           <div
@@ -181,7 +208,7 @@ const Home = () => {
               borderRadius: "50px",
             }}
           >
-            <img src="Assets/Iteration-2-aseets/icons/5.svg" alt="" />
+            <img src={logo13} alt="" />
             <p>Fast Food</p>
           </div>
           <div
@@ -194,14 +221,14 @@ const Home = () => {
               borderRadius: "50px",
             }}
           >
-            <img src="Assets/Iteration-2-aseets/icons/6.svg" alt="" />
+            <img src={logo14} alt="" />
             <p>Soft Drinks</p>
           </div>
         </div>
       </div>
       <div className="fotograflı-menu">
         <div className="cards">
-          <img src="Assets/Iteration-2-aseets/pictures/food-1.png" />
+          <img src={logo15} />
           <p
             style={{
               fontSize: "22px",
@@ -218,7 +245,7 @@ const Home = () => {
           </div>
         </div>
         <div className="cards">
-          <img src="Assets/Iteration-2-aseets/pictures/food-2.png" />
+          <img src={logo16} />
           <p
             style={{
               fontSize: "22px",
@@ -235,7 +262,7 @@ const Home = () => {
           </div>
         </div>
         <div className="cards">
-          <img src="Assets/Iteration-2-aseets/pictures/food-3.png" />
+          <img src={logo17} />
           <p
             style={{
               fontSize: "22px",
@@ -256,26 +283,26 @@ const Home = () => {
         <div className="footer-information">
           <div>
             <img
-              src="Assets/Iteration-2-aseets/footer/logo-footer.svg"
+              src={logo18}
               style={{ marginBottom: "50px" }}
             />
             <p style={{ marginBottom: "20px" }}>
               <img
-                src="Assets/Iteration-2-aseets/footer/icons/icon-1.png"
+                src={logo19}
                 style={{ marginRight: "10px" }}
               />
               341 Londonderry Road, Istanbul Türkiye
             </p>
             <p style={{ marginBottom: "20px" }}>
               <img
-                src="Assets/Iteration-2-aseets/footer/icons/icon-2.png"
+                src={logo20}
                 style={{ marginRight: "10px" }}
               />
               aciktim@teknolojikyemekler.com 
             </p>
             <p>
               <img
-                src="Assets/Iteration-2-aseets/footer/icons/icon-3.png"
+                src={logo21}
                 style={{ marginRight: "10px" }}
               />
               +90 216 123 45 67
@@ -296,7 +323,7 @@ const Home = () => {
             </p>
             <div>
               <img
-                src="Assets/Iteration-2-aseets/footer/insta/li-0.png"
+                src={logo22}
                 style={{
                   width: "105px",
                   height: "94.5px",
@@ -305,7 +332,7 @@ const Home = () => {
                 }}
               />
               <img
-                src="Assets/Iteration-2-aseets/footer/insta/li-1.png"
+                src={logo23}
                 style={{
                   width: "105px",
                   height: "94.5px",
@@ -314,7 +341,7 @@ const Home = () => {
                 }}
               />
               <img
-                src="Assets/Iteration-2-aseets/footer/insta/li-2.png"
+                src={logo24}
                 style={{
                   width: "105px",
                   height: "94.5px",
@@ -324,7 +351,7 @@ const Home = () => {
             </div>
             <div>
               <img
-                src="Assets/Iteration-2-aseets/footer/insta/li-3.png"
+                src={logo25}
                 style={{
                   width: "105px",
                   height: "94.5px",
@@ -332,7 +359,7 @@ const Home = () => {
                 }}
               />
               <img
-                src="Assets/Iteration-2-aseets/footer/insta/li-4.png"
+                src={logo26}
                 style={{
                   width: "105px",
                   height: "94.5px",
@@ -340,7 +367,7 @@ const Home = () => {
                 }}
               />
               <img
-                src="Assets/Iteration-2-aseets/footer/insta/li-5.png"
+                src={logo27}
                 style={{ width: "105px", height: "94.5px" }}
               />
             </div>
