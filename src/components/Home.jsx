@@ -3,6 +3,12 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import "./home.css";
 import { FaTwitter } from "react-icons/fa";
 import logo from "../../Assets/Iteration-1-assets/logo.svg"
+import logo3 from "../../Assets/Iteration-2-aseets/icons/1.svg"
+import logo4 from "../../Assets/Iteration-2-aseets/icons/2.svg"
+import logo5 from "../../Assets/Iteration-2-aseets/icons/3.svg"
+import logo6 from "../../Assets/Iteration-2-aseets/icons/4.svg"
+import logo7 from "../../Assets/Iteration-2-aseets/icons/5.svg"
+import logo8 from "../../Assets/Iteration-2-aseets/icons/6.svg"
 
 const Home = () => {
   return (
@@ -21,27 +27,27 @@ const Home = () => {
       <div className="mainMenu-css">
         <div className="menu-css">
           <div className="menu-icons">
-            <img src="Assets/Iteration-2-aseets/icons/1.svg" alt="" />
+            <img src={logo3} alt="" />
             <p>YENİ! Kore</p>
           </div>
           <div className="menu-icons">
-            <img src="Assets/Iteration-2-aseets/icons/2.svg" alt="" />
+            <img src={logo4} alt="" />
             <p>Pizza</p>
           </div>
           <div className="menu-icons">
-            <img src="Assets/Iteration-2-aseets/icons/3.svg" alt="" />
+            <img src={logo5} alt="" />
             <p>Burger</p>
           </div>
           <div className="menu-icons">
-            <img src="Assets/Iteration-2-aseets/icons/4.svg" alt="" />
+            <img src={logo6} alt="" />
             <p>Kızartmalar</p>
           </div>
           <div className="menu-icons">
-            <img src="Assets/Iteration-2-aseets/icons/5.svg" alt="" />
+            <img src={logo7} alt="" />
             <p>Fast Food</p>
           </div>
           <div className="menu-icons">
-            <img src="Assets/Iteration-2-aseets/icons/6.svg" alt="" />
+            <img src={logo8} alt="" />
             <p>Gazlı İçecek</p>
           </div>
         </div>
