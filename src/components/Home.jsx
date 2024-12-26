@@ -23,8 +23,11 @@ import logo19 from "../../Assets/Iteration-2-aseets/footer/icons/icon-1.png"
 import logo20 from "../../Assets/Iteration-2-aseets/footer/icons/icon-2.png"
 import logo21 from "../../Assets/Iteration-2-aseets/footer/icons/icon-3.png"
 import logo22 from "../../Assets/Iteration-2-aseets/footer/insta/li-0.png"
-import logo23 from "../../Assets/Iteration-2-aseets/footer/logo-footer.svg"
-import logo24 from "../../Assets/Iteration-2-aseets/footer/logo-footer.svg"
+import logo23 from "../../Assets/Iteration-2-aseets/footer/insta/li-1.png"
+import logo24 from "../../Assets/Iteration-2-aseets/footer/insta/li-2.png"
+import logo25 from "../../Assets/Iteration-2-aseets/footer/insta/li-3.png"
+import logo26 from "../../Assets/Iteration-2-aseets/footer/insta/li-4.png"
+import logo27 from "../../Assets/Iteration-2-aseets/footer/insta/li-5.png"
 
 
 const Home = () => {
@@ -329,7 +332,7 @@ const Home = () => {
                 }}
               />
               <img
-                src="Assets/Iteration-2-aseets/footer/insta/li-1.png"
+                src={logo23}
                 style={{
                   width: "105px",
                   height: "94.5px",
@@ -338,7 +341,7 @@ const Home = () => {
                 }}
               />
               <img
-                src="Assets/Iteration-2-aseets/footer/insta/li-2.png"
+                src={logo24}
                 style={{
                   width: "105px",
                   height: "94.5px",
@@ -348,7 +351,7 @@ const Home = () => {
             </div>
             <div>
               <img
-                src="Assets/Iteration-2-aseets/footer/insta/li-3.png"
+                src={logo25}
                 style={{
                   width: "105px",
                   height: "94.5px",
@@ -356,7 +359,7 @@ const Home = () => {
                 }}
               />
               <img
-                src="Assets/Iteration-2-aseets/footer/insta/li-4.png"
+                src={logo26}
                 style={{
                   width: "105px",
                   height: "94.5px",
@@ -364,7 +367,7 @@ const Home = () => {
                 }}
               />
               <img
-                src="Assets/Iteration-2-aseets/footer/insta/li-5.png"
+                src={logo27}
                 style={{ width: "105px", height: "94.5px" }}
               />
             </div>
