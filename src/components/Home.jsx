@@ -10,6 +10,8 @@ import logo6 from "../../Assets/Iteration-2-aseets/icons/4.svg"
 import logo7 from "../../Assets/Iteration-2-aseets/icons/5.svg"
 import logo8 from "../../Assets/Iteration-2-aseets/icons/6.svg"
 import logo9 from "../../Assets/Iteration-2-aseets/icons/1.svg"
+import logo10 from "../../Assets/Iteration-2-aseets/icons/2.svg"
+import logo11 from "../../Assets/Iteration-2-aseets/icons/3.svg"
 
 const Home = () => {
   return (
@@ -150,7 +152,7 @@ const Home = () => {
               borderRadius: "50px",
             }}
           >
-            <img src="Assets/Iteration-2-aseets/icons/2.svg" alt="" />
+            <img src={logo10} alt="" />
             <p>Pizza</p>
           </div>
           <div
@@ -163,7 +165,7 @@ const Home = () => {
               borderRadius: "50px",
             }}
           >
-            <img src="Assets/Iteration-2-aseets/icons/3.svg" alt="" />
+            <img src={logo11} alt="" />
             <p>Burger</p>
           </div>
           <div
