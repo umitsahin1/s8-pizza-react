@@ -2,12 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import "./home.css";
 import { FaTwitter } from "react-icons/fa";
+import logo from "../../Assets/Iteration-1-assets/logo.svg"
 
 const Home = () => {
   return (
     <div style={{ backgroundColor: "#faf7f2" }}>
       <header className="home-css">
-        <img src="Assets/Iteration-1-assets/logo.svg" alt="home-png" />
+        <img src={logo} alt="home-png" />
         <p className="fırsat-css">fırsatı kaçırma</p>
         <p className="home-paragraf">KOD ACIKTIRIR</p>
         <p className="home-paragraf">PİZZA, DOYURUR</p>
