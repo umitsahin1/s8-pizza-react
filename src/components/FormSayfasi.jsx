@@ -1,6 +1,6 @@
 import React from "react";
-import Main from "./main";
-import Header from "./header";
+import Main from "./Main";
+import Header from "./Header";
 
 function FormSayfasi({
   quantity = { quantity },

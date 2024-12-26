@@ -7,6 +7,7 @@ import SiparisVer from "./SiparisVer.jsx";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
+import logos from "../../Assets/Iteration-2-aseets/pictures/food-2.png"
 
 const errorMessages = {
   isim: "İsim en az 3 karakter olmalı",
@@ -92,7 +93,7 @@ export default function Main({
   return (
     <div className="main-css">
       <img
-        src="Assets/Iteration-2-aseets/pictures/food-2.png"
+        src={logos}
         className="pizza-image"
         style={{ marginTop: "-350px" }}
       />

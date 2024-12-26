@@ -1,13 +1,24 @@
 import React from "react";
 import "./siparisOnay.css";
 import { FaTwitter } from "react-icons/fa";
+import logosheader from "../../Assets/Iteration-1-assets/logo.svg"
+import logos1 from "../../Assets/Iteration-2-aseets/footer/logo-footer.svg"
+import logos2 from "../../Assets/Iteration-2-aseets/footer/icons/icon-1.png"
+import logos3 from "../../Assets/Iteration-2-aseets/footer/icons/icon-2.png"
+import logos4 from "../../Assets/Iteration-2-aseets/footer/icons/icon-3.png"
+import logos5 from "../../Assets/Iteration-2-aseets/footer/insta/li-0.png"
+import logos6 from "../../Assets/Iteration-2-aseets/footer/insta/li-1.png"
+import logos7 from "../../Assets/Iteration-2-aseets/footer/insta/li-2.png"
+import logos8 from "../../Assets/Iteration-2-aseets/footer/insta/li-3.png"
+import logos9 from "../../Assets/Iteration-2-aseets/footer/insta/li-4.png"
+import logos10 from "../../Assets/Iteration-2-aseets/footer/insta/li-5.png"
 
 const SiparisOnay = ({ quantity, formData }) => {
   return (
     <div className="siparisOnay">
       <img
         className="onay-css"
-        src="Assets/Iteration-1-assets/logo.svg"
+        src={logosheader}
         alt="logo"
       />
       <div className="paragraf">
@@ -73,26 +84,26 @@ const SiparisOnay = ({ quantity, formData }) => {
           <div className="footer-information">
             <div>
               <img
-                src="Assets/Iteration-2-aseets/footer/logo-footer.svg"
+                src={logos1}
                 style={{ marginBottom: "50px" }}
               />
               <p style={{ marginBottom: "20px" }}>
                 <img
-                  src="Assets/Iteration-2-aseets/footer/icons/icon-1.png"
+                  src={logos2}
                   style={{ marginRight: "10px" }}
                 />
                 341 Londonderry Road, Istanbul Türkiye
               </p>
               <p style={{ marginBottom: "20px" }}>
                 <img
-                  src="Assets/Iteration-2-aseets/footer/icons/icon-2.png"
+                  src={logos3}
                   style={{ marginRight: "10px" }}
                 />
                 aciktim@teknolojikyemekler.com
               </p>
               <p>
                 <img
-                  src="Assets/Iteration-2-aseets/footer/icons/icon-3.png"
+                  src={logos4}
                   style={{ marginRight: "10px" }}
                 />
                 +90 216 123 45 67
@@ -113,7 +124,7 @@ const SiparisOnay = ({ quantity, formData }) => {
               </p>
               <div>
                 <img
-                  src="Assets/Iteration-2-aseets/footer/insta/li-0.png"
+                  src={logos5}
                   style={{
                     width: "105px",
                     height: "94.5px",
@@ -122,7 +133,7 @@ const SiparisOnay = ({ quantity, formData }) => {
                   }}
                 />
                 <img
-                  src="Assets/Iteration-2-aseets/footer/insta/li-1.png"
+                  src={logos6}
                   style={{
                     width: "105px",
                     height: "94.5px",
@@ -131,7 +142,7 @@ const SiparisOnay = ({ quantity, formData }) => {
                   }}
                 />
                 <img
-                  src="Assets/Iteration-2-aseets/footer/insta/li-2.png"
+                  src={logos7}
                   style={{
                     width: "105px",
                     height: "94.5px",
@@ -141,7 +152,7 @@ const SiparisOnay = ({ quantity, formData }) => {
               </div>
               <div>
                 <img
-                  src="Assets/Iteration-2-aseets/footer/insta/li-3.png"
+                  src={logos8}
                   style={{
                     width: "105px",
                     height: "94.5px",
@@ -149,7 +160,7 @@ const SiparisOnay = ({ quantity, formData }) => {
                   }}
                 />
                 <img
-                  src="Assets/Iteration-2-aseets/footer/insta/li-4.png"
+                  src={logos9}
                   style={{
                     width: "105px",
                     height: "94.5px",
@@ -157,7 +168,7 @@ const SiparisOnay = ({ quantity, formData }) => {
                   }}
                 />
                 <img
-                  src="Assets/Iteration-2-aseets/footer/insta/li-5.png"
+                  src={logos10}
                   style={{ width: "105px", height: "94.5px" }}
                 />
               </div>
